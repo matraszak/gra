@@ -21,6 +21,7 @@ public class ObjectClick : MonoBehaviour
 
     public void CallScript()
     {
+        Debug.Log(Script);
         onPoiterClickCallback.Invoke();
     }
 }
