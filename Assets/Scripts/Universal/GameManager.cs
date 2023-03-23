@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     public bool canClone = true;
+    public bool ForcedObject = false;
 
 
     public GameObject FocusedObject;
@@ -24,9 +25,20 @@ public class GameManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape)&&FocusedObject!=null)
         {
-            Destroy(FocusedObject);
-            FocusedObject = null;
-            canClone = true;
+            if(!ForcedObject)
+            {
+                Destroy(FocusedObject);
+                FocusedObject = null;
+                canClone = true;
+            }
+            else
+            {
+                FocusedObject.SetActive(false);
+                FocusedObject = null;
+                canClone = true;
+                ForcedObject = false;
+            }
+            
         }
     }
 }

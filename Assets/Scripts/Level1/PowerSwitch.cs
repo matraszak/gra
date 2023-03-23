@@ -1,31 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerSwitch : MonoBehaviour
+public class PowerSwitch : ClickOnObject
 {
     public int number;
     public Animator animator;
-    bool reverse = false;
+    public bool reverse_switched = false;
 
-    private void Start()
+
+    public override void OnClick()
     {
-        ObjectClick.instanse.onPoiterClickCallback += Switch;
+        Switch();
     }
 
     void Switch()
     {
-        Debug.Log("Switch " + reverse + number);
-        LevelManager.instanse.SwitchedPower[number] = !reverse;
-        if(reverse)
+        Debug.Log("Switch " + reverse_switched + number);
+        LevelManager.instanse.SwitchedPower[number] = !reverse_switched;
+        if (reverse_switched)
         {
-            reverse = false;
+            reverse_switched = false;
             animator.SetTrigger("PlayReverse");
         }
-        else if(!reverse)
+        else if (!reverse_switched)
         {
-            reverse = true;
+            reverse_switched = true;
             animator.SetTrigger("Play");
         }
     }
+
 }

@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class ObjectClick : MonoBehaviour
 {
     #region ObjectClick instanse
@@ -16,12 +15,17 @@ public class ObjectClick : MonoBehaviour
 
     public MonoBehaviour Script;
 
+    public Component component;
+
     public delegate void OnPoiterClick();
     public OnPoiterClick onPoiterClickCallback;
 
     public void CallScript()
     {
-        Debug.Log(Script);
+        Debug.Log("ObjectClick "+this.gameObject.name);
+        Debug.Log(Script.name + "monobehaviour");
+        Debug.Log(component.name+ " component");
         onPoiterClickCallback.Invoke();
+        //component.onPointerClickCallback.Invoke();
     }
 }
