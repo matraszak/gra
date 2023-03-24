@@ -15,7 +15,7 @@ public class CashRegisterBtn : ClickOnObject
         if (LevelManagerTutorial.instanse.canEnterCode)
         {
             LevelManagerTutorial.instanse.Code.Add(number);
-            animator.Play(0);
+            animator.SetTrigger("Play");
             if (LevelManagerTutorial.instanse.Code.Count == 6)
             {
                 LevelManagerTutorial.instanse.CheckCode();
