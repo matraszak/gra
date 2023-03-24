@@ -7,7 +7,6 @@ public class FocusOnObject : ClickOnObject
     GameObject prefab;
     public GameObject ForceObject = null;
 
-
     public override void OnClick()
     {
         ShowObject();

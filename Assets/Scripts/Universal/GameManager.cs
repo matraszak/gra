@@ -19,8 +19,6 @@ public class GameManager : MonoBehaviour
 
     public GameObject FocusedObject;
 
-
-
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape)&&FocusedObject!=null)

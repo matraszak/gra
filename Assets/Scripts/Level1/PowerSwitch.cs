@@ -15,7 +15,8 @@ public class PowerSwitch : ClickOnObject
     void Switch()
     {
         Debug.Log("Switch " + reverse_switched + number);
-        LevelManager.instanse.SwitchedPower[number] = !reverse_switched;
+        LevelManagerTutorial.instanse.SwitchedPower[number] = !reverse_switched;
+        LevelManagerTutorial.instanse.Switch(number);
         if (reverse_switched)
         {
             reverse_switched = false;

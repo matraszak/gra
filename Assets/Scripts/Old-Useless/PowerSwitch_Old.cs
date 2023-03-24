@@ -16,7 +16,7 @@ public class PowerSwitch_Old : MonoBehaviour
     void Switch()
     {
         Debug.Log("Switch " + reverse + number);
-        LevelManager.instanse.SwitchedPower[number] = !reverse;
+        LevelManagerTutorial.instanse.SwitchedPower[number] = !reverse;
         if(reverse)
         {
             reverse = false;
