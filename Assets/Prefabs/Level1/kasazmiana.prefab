@@ -897,7 +897,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7375443104742212583}
   - component: {fileID: 7048255533103926222}
-  - component: {fileID: 7048255533103926216}
   m_Layer: 0
   m_Name: kasazmiana
   m_TagString: Untagged
@@ -947,23 +946,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5189679, y: 1, z: 1.3849784}
   m_Center: {x: 0.25948405, y: -0.000000011377823, z: 0.19248913}
---- !u!114 &7048255533103926216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7859070254326208861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 846d43b4915a6724d9abec3b24eee307, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  position:
-  - 0
-  - 0
-  - -7.5
-  ForceObject: {fileID: 0}
 --- !u!1 &8067963335352306189
 GameObject:
   m_ObjectHideFlags: 0
