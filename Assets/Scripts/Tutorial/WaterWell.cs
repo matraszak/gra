@@ -5,6 +5,7 @@ using UnityEngine;
 public class WaterWell : ClickOnObject
 {
     Animator animator;
+    public Animator ScreenTransition;
     private void Awake()
     {
         if (this.GetComponent<Animator>())
@@ -15,6 +16,7 @@ public class WaterWell : ClickOnObject
     {
         if (LevelManagerTutorial.instanse.LevelStage == 0 || LevelManagerTutorial.instanse.LevelStage == 1)
         {
+            GameManager.instanse.canRotate = false;
             GameManager.instanse.canClick = false;
             if (LevelManagerTutorial.instanse.Water)
             {
@@ -31,5 +33,12 @@ public class WaterWell : ClickOnObject
     public void AnimationEvent()
     {
         GameManager.instanse.canClick = true;
+        GameManager.instanse.canRotate = true;
+        if(LevelManagerTutorial.instanse.LevelStage == 2)
+        {
+            ScreenTransition.SetTrigger("Play2");
+            Destroy(LevelManagerTutorial.instanse.FrontWalls.gameObject);
+        }
+
     }
 }

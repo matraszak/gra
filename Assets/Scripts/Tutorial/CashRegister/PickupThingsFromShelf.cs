@@ -8,11 +8,11 @@ public class PickupThingsFromShelf : ClickOnObject
         if(things[0])
         {
             LevelManagerTutorial.instanse.canOpenDoor = true;
-            Destroy(this);
+            Destroy(this.gameObject);
         }
         else if(things[1])
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
     }
 }

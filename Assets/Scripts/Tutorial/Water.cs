@@ -10,6 +10,8 @@ public class Water : ClickOnObject
     {
         if (LevelManagerTutorial.instanse.Water)
         {
+            GameManager.instanse.canRotate = false;
+            GameManager.instanse.canClick = false;
             animator.SetTrigger("Play");
             LevelManagerTutorial.instanse.Water = false;
             if (LevelManagerTutorial.instanse.LevelStage == 0)
@@ -19,6 +21,8 @@ public class Water : ClickOnObject
         }
         else if (!LevelManagerTutorial.instanse.Water)
         {
+            GameManager.instanse.canRotate = false;
+            GameManager.instanse.canClick = false;
             animator.SetTrigger("PlayReverse");
             LevelManagerTutorial.instanse.Water = true;
             if (LevelManagerTutorial.instanse.LevelStage == 1)
@@ -26,5 +30,11 @@ public class Water : ClickOnObject
                 LevelManagerTutorial.instanse.LevelStage = 0;
             }
         }
+    }
+
+    public void End()
+    {
+        GameManager.instanse.canRotate = true;
+        GameManager.instanse.canClick = true;
     }
 }
