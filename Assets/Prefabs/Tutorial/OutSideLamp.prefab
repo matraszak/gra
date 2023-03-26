@@ -425,7 +425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4978256328772855583}
   m_Layer: 0
-  m_Name: latarniauliczna2
+  m_Name: OutSideLamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1099890840860697474}
   m_Layer: 0
-  m_Name: kwiatekdoniczkowy
+  m_Name: Plant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

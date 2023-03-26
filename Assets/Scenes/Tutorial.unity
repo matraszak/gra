@@ -176,7 +176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7859070254326208861, guid: 79c31879ec00e7e439de55b1d1deaa43, type: 3}
       propertyPath: m_Name
-      value: kasazmiana
+      value: CashRegister
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79c31879ec00e7e439de55b1d1deaa43, type: 3}
@@ -290,7 +290,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 61b5375f482b9a541887ee2d2ae01be4, type: 2}
     - target: {fileID: 5646811816566259109, guid: fcd0f4b2d59f33b41a1f3aef01869493, type: 3}
       propertyPath: m_Name
-      value: latarniauliczna2
+      value: OutSideLamp
       objectReference: {fileID: 0}
     - target: {fileID: 5646811816566259109, guid: fcd0f4b2d59f33b41a1f3aef01869493, type: 3}
       propertyPath: m_IsActive
@@ -402,7 +402,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &188618218
 GameObject:
@@ -572,7 +572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4454978413322775581, guid: a098901845e56f2488b113fae40032f5, type: 3}
       propertyPath: m_Name
-      value: zaworwody
+      value: WaterValve
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a098901845e56f2488b113fae40032f5, type: 3}
@@ -645,7 +645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8838666681261123605, guid: c8a3866e05297a34a84406f197942373, type: 3}
       propertyPath: m_Name
-      value: wlacznikBack
+      value: Switch2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a3866e05297a34a84406f197942373, type: 3}
@@ -768,7 +768,7 @@ GameObject:
   - component: {fileID: 933351676}
   - component: {fileID: 933351677}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CashRegisterFull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -834,7 +834,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4689902321848945958, guid: cab8cede6f848d348aa22737a36c4671, type: 3}
       propertyPath: m_Name
-      value: drzwi2
+      value: BackDoor
       objectReference: {fileID: 0}
     - target: {fileID: 5358775568771209116, guid: cab8cede6f848d348aa22737a36c4671, type: 3}
       propertyPath: m_RootOrder
@@ -903,100 +903,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5358775568771209116, guid: cab8cede6f848d348aa22737a36c4671, type: 3}
   m_PrefabInstance: {fileID: 980500649}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1325031234
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1325031236}
-  - component: {fileID: 1325031235}
-  m_Layer: 0
-  m_Name: Directional Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!108 &1325031235
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325031234}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 1
-  m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 2
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &1325031236
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325031234}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!4 &1328089173 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4978256328772855583, guid: fcd0f4b2d59f33b41a1f3aef01869493, type: 3}
@@ -1044,7 +950,7 @@ Transform:
   - {fileID: 1825201285}
   - {fileID: 8207295040633173504}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1674659647
 GameObject:
@@ -1083,6 +989,7 @@ MonoBehaviour:
   Code: 
   canEnterCode: 1
   canOpenDoor: 0
+  LevelStage: 0
 --- !u!114 &1674659649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1134,7 +1041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6138446332100634615, guid: 2722106feaafe2a4ab22d8a7570a4b13, type: 3}
       propertyPath: m_Name
-      value: skrzynkazbezpiecznikami
+      value: PowerSwitchesBox
       objectReference: {fileID: 0}
     - target: {fileID: 6808304393261694285, guid: 2722106feaafe2a4ab22d8a7570a4b13, type: 3}
       propertyPath: m_RootOrder
@@ -1295,7 +1202,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6910855629347719
 PrefabInstance:
@@ -1366,7 +1273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8838666681261123605, guid: c8a3866e05297a34a84406f197942373, type: 3}
       propertyPath: m_Name
-      value: wlacznik
+      value: Switch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a3866e05297a34a84406f197942373, type: 3}
@@ -1439,7 +1346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9172632266528813096, guid: 00c9dbf5305d7d543bb176890fab55e0, type: 3}
       propertyPath: m_Name
-      value: sejf
+      value: SafeBox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00c9dbf5305d7d543bb176890fab55e0, type: 3}
@@ -1452,7 +1359,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8613169265351252344, guid: cf18eeb8af21a3146b936ef802751ee8, type: 3}
       propertyPath: m_Name
-      value: stolpodkasa
+      value: Table
       objectReference: {fileID: 0}
     - target: {fileID: 8990257307034223554, guid: cf18eeb8af21a3146b936ef802751ee8, type: 3}
       propertyPath: m_RootOrder
@@ -1535,7 +1442,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3461510040151666394, guid: 302a39c2728f58541bc67e804a8c91bc, type: 3}
       propertyPath: m_Name
-      value: pieniadze
+      value: Money
       objectReference: {fileID: 0}
     - target: {fileID: 4269994802218562656, guid: 302a39c2728f58541bc67e804a8c91bc, type: 3}
       propertyPath: m_RootOrder
@@ -1608,7 +1515,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2845605306602168889, guid: 15d256a2dfec7454a8e53599afe5021b, type: 3}
       propertyPath: m_Name
-      value: studzienkakanalizacyjna
+      value: OutSideWell
       objectReference: {fileID: 0}
     - target: {fileID: 3185819958559733891, guid: 15d256a2dfec7454a8e53599afe5021b, type: 3}
       propertyPath: m_RootOrder
@@ -1674,7 +1581,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 290561654192961848, guid: 4053a1c791018314580bc1199f3536b4, type: 3}
       propertyPath: m_Name
-      value: kwiatekdoniczkowy
+      value: Plant
       objectReference: {fileID: 0}
     - target: {fileID: 1099890840860697474, guid: 4053a1c791018314580bc1199f3536b4, type: 3}
       propertyPath: m_RootOrder
@@ -1799,7 +1706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4398973080496033418, guid: 08574e1e7884eb445a7d44995fbdf77a, type: 3}
       propertyPath: m_Name
-      value: sklep-trzeciawersja(1)
+      value: Shop
       objectReference: {fileID: 0}
     - target: {fileID: 7819502136327389759, guid: 08574e1e7884eb445a7d44995fbdf77a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1876,7 +1783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8687520712933489627, guid: 2736003207843f7448dd3aeb90189f89, type: 3}
       propertyPath: m_Name
-      value: szafkapodkasa
+      value: CashRegisterShelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2736003207843f7448dd3aeb90189f89, type: 3}
@@ -1909,7 +1816,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8165637439826529039, guid: 7c6f94b9226c57c4ebeac1e1c95437e4, type: 3}
       propertyPath: m_Name
-      value: klucz
+      value: Key
       objectReference: {fileID: 0}
     - target: {fileID: 8798339669936689589, guid: 7c6f94b9226c57c4ebeac1e1c95437e4, type: 3}
       propertyPath: m_RootOrder
@@ -1978,7 +1885,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6149421001771421116, guid: 201d29691c33e454394fc0d9fc35240e, type: 3}
       propertyPath: m_Name
-      value: polka
+      value: Shelf
       objectReference: {fileID: 0}
     - target: {fileID: 6781560659870603014, guid: 201d29691c33e454394fc0d9fc35240e, type: 3}
       propertyPath: m_RootOrder

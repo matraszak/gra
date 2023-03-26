@@ -64,4 +64,7 @@ public class LevelManagerTutorial : MonoBehaviour
     }
     #endregion
 
+    #region Playing Level
+    public int LevelStage = 0; //0 - poczatek, 1 - zakreconie wody, 2 - wejscie do sklepu, 3 - wlamanie sie do kasy, 4 - wejscie na tyl, 5 - sejf
+    #endregion
 }

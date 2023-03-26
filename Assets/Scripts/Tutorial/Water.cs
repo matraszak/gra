@@ -12,11 +12,19 @@ public class Water : ClickOnObject
         {
             animator.SetTrigger("Play");
             LevelManagerTutorial.instanse.Water = false;
+            if (LevelManagerTutorial.instanse.LevelStage == 0)
+            {
+                LevelManagerTutorial.instanse.LevelStage = 1;
+            }
         }
         else if (!LevelManagerTutorial.instanse.Water)
         {
             animator.SetTrigger("PlayReverse");
             LevelManagerTutorial.instanse.Water = true;
+            if(LevelManagerTutorial.instanse.LevelStage == 1)
+            {
+                LevelManagerTutorial.instanse.LevelStage = 0;
+            }
         }
     }
 }

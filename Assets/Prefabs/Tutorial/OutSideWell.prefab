@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8165637439826529039
+--- !u!1 &2845605306602168889
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8798339669936689589}
-  - component: {fileID: 5599699217863073296}
-  - component: {fileID: 7661422915691358938}
+  - component: {fileID: 3185819958559733891}
+  - component: {fileID: 1988785408535852838}
+  - component: {fileID: 4358748329821242348}
   m_Layer: 0
-  m_Name: klucz
+  m_Name: OutSideWell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8798339669936689589
+--- !u!4 &3185819958559733891
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8165637439826529039}
-  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 1.077, y: 0.597, z: 7.062}
-  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
+  m_GameObject: {fileID: 2845605306602168889}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -3.46, y: -2.54, z: -0.36}
+  m_LocalScale: {x: 3.9, y: 3.9, z: 3.9}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
---- !u!33 &5599699217863073296
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1988785408535852838
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8165637439826529039}
-  m_Mesh: {fileID: -5597413669959119900, guid: 035bb8a2e18ec0b4e9a90236617754db, type: 3}
---- !u!23 &7661422915691358938
+  m_GameObject: {fileID: 2845605306602168889}
+  m_Mesh: {fileID: -951608786083511892, guid: 144a55bbff5944a40886634b4c7a7560, type: 3}
+--- !u!23 &4358748329821242348
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8165637439826529039}
+  m_GameObject: {fileID: 2845605306602168889}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
