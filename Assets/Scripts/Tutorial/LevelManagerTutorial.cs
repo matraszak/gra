@@ -45,9 +45,9 @@ public class LevelManagerTutorial : MonoBehaviour
     public void CheckCode()
     {
         bool isExact = true;
-        for(int i = 0; i<6; i++)
+        for (int i = 0; i < 6; i++)
         {
-            if(Code[i] != CorrectCode[i])
+            if (Code[i] != CorrectCode[i])
             {
                 isExact = false;
                 break;

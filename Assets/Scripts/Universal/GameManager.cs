@@ -15,19 +15,22 @@ public class GameManager : MonoBehaviour
 
     public bool canClone = true;
     public bool ForcedObject = false;
+    public bool canClick = true;
+    public bool canRotate = true;
 
 
     public GameObject FocusedObject;
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape)&&FocusedObject!=null)
+        if (Input.GetKeyDown(KeyCode.Escape) && FocusedObject != null)
         {
-            if(!ForcedObject)
+            if (!ForcedObject)
             {
                 Destroy(FocusedObject);
                 FocusedObject = null;
                 canClone = true;
+                canRotate = true;
             }
             else
             {
@@ -35,8 +38,9 @@ public class GameManager : MonoBehaviour
                 FocusedObject = null;
                 canClone = true;
                 ForcedObject = false;
+                canRotate = true;
             }
-            
+
         }
     }
 }

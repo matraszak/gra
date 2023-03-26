@@ -8,22 +8,39 @@ public class RotateLevel : MonoBehaviour
 
     public GameObject LevelBlock;
 
-    private void Start()
-    {
-        LevelBlock = this.gameObject;
-    }
+    public Animator animator;
+    int direction = 1;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-            RotateLevelFunction(1);
-        else if (Input.GetKeyDown(KeyCode.Q))
-            RotateLevelFunction(-1);
+        if (GameManager.instanse.canRotate)
+        {
+
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                //RotateLevelFunction();
+                direction = 1;
+                GameManager.instanse.canRotate = false;
+                animator.SetTrigger("Play");
+            }
+            else if (Input.GetKeyDown(KeyCode.Q))
+            {
+                //RotateLevelFunction();
+                direction = -1;
+                GameManager.instanse.canRotate = false;
+                animator.SetTrigger("Play");
+            }
+        }
     }
 
-    void RotateLevelFunction(int direction)
+    public void RotateLevelFunction()
     {
-        Debug.Log("Works");
-        LevelBlock.transform.Rotate(0, (360 / NumberOfLevels)* direction, 0);
+        LevelBlock.transform.Rotate(0, (360 / NumberOfLevels) * direction, 0);
+    }
+
+    public void End()
+    {
+        GameManager.instanse.canRotate = true;
     }
 }
