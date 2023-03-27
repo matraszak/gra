@@ -55,7 +55,7 @@ public class LevelManagerTutorial : MonoBehaviour
     #region Code
     [Header("Code")]
     public List<int> Code = new List<int>();
-    List<int> CorrectCode = new List<int> { 4, 7, 2, 6, 1, 9 };
+    List<int> CorrectCode = new List<int> { 1, 4, 8 };
     public bool canEnterCode = false;
     public Animator UnderCashShelf;
 
@@ -64,7 +64,7 @@ public class LevelManagerTutorial : MonoBehaviour
     public void CheckCode()
     {
         bool isExact = true;
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < CorrectCode.Count; i++)
         {
             if (Code[i] != CorrectCode[i])
             {
