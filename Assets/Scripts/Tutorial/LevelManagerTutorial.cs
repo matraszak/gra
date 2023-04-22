@@ -49,15 +49,6 @@ public class LevelManagerTutorial : MonoBehaviour
     }
     #endregion
 
-    private void Start()
-    {
-        for(int i = 0; i<3; i++)
-        {
-            boxCode.Add( Random.Range(0, 30));
-        }
-    }
-
-
     #region Code
     [Header("Code")]
     public List<int> Code = new List<int>();
@@ -91,61 +82,34 @@ public class LevelManagerTutorial : MonoBehaviour
     #endregion
 
     #region safebox
-    public List<int> CorrectBoxCode = new List<int> { 8, 25, 4 };
-    public List<int> boxCode = new List<int>();
-    int steps = 30;
+    public List<int> SafeboxCode = new List<int>();
+    List<int> CorrectSafeboxCode = new List<int> { 6, 3, 1, 4 };
+    public bool canEnterSafeboxCode = false;
+    public GameObject EndPanel;
 
-    public bool CheckBoxCode()
+    public void CheckSafeboxCode()
     {
-        bool good = false;
-        foreach (int number in boxCode)
+        bool isExact = true;
+        for (int i = 0; i < CorrectSafeboxCode.Count; i++)
         {
-            foreach (int correctnumber in CorrectBoxCode)
+            if (SafeboxCode[i] != CorrectSafeboxCode[i])
             {
-                if (correctnumber == number)
-                {
-                    good = true;
-                }
-                else
-                {
-                    good = false;
-                    break;
-                }
+                isExact = false;
+                break;
             }
         }
-        if (good)
-            return true;
+        if (isExact)
+        {
+            canEnterSafeboxCode = false;
+            EndPanel.SetActive(true);
+            GameManager.instanse.canClick = false;
+            GameManager.instanse.canRotate = false;
+        }
         else
-            return false;
-    }
-
-    public void rotate(int direction)
-    {
-        shift(0, direction);
-        for(int i = 0; i<boxCode.Count - 1; i++)
         {
-            if(boxCode[i]== boxCode[i+1])
-            {
-                shift(i + 1, direction); 
-            }
-        }
-        if (CheckBoxCode())
-        {
-            Debug.Log("Dobry kod");
+            SafeboxCode.Clear();
         }
     }
-    
-    void shift(int i, int direction)
-    {
-        boxCode[i] = (boxCode[i] + direction) % steps;
-        if (boxCode[i] < 0)
-            boxCode[i] = 30 + boxCode[i];
-    }
-
-
-
-
-
     #endregion
     #region Playing Level
     public int LevelStage = 0; //0 - poczatek, 1 - zakrecenie wody, 2 - wejscie do sklepu, 3 - wlamanie sie do kasy, 4 - wejscie na tyl, 5 - otwarcie sejfu
