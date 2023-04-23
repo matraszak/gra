@@ -56,6 +56,7 @@ public class LevelManagerTutorial : MonoBehaviour
     public bool canEnterCode = false;
     public Animator UnderCashShelf;
 
+
     public bool canOpenDoor = false;
 
     public void CheckCode()
@@ -86,6 +87,8 @@ public class LevelManagerTutorial : MonoBehaviour
     List<int> CorrectSafeboxCode = new List<int> { 6, 3, 1, 4 };
     public bool canEnterSafeboxCode = false;
     public GameObject EndPanel;
+    public GameObject red;
+    public GameObject green;
 
     public void CheckSafeboxCode()
     {
@@ -101,6 +104,7 @@ public class LevelManagerTutorial : MonoBehaviour
         if (isExact)
         {
             canEnterSafeboxCode = false;
+            green.SetActive(true);
             EndPanel.SetActive(true);
             GameManager.instanse.canClick = false;
             GameManager.instanse.canRotate = false;
@@ -108,6 +112,7 @@ public class LevelManagerTutorial : MonoBehaviour
         else
         {
             SafeboxCode.Clear();
+            red.SetActive(false);            
         }
     }
     #endregion

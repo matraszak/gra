@@ -17,6 +17,7 @@ public class SafeboxBtn : ClickOnObject
 
     void Click()
     {
+        LevelManagerTutorial.instanse.red.SetActive(false);
         if (LevelManagerTutorial.instanse.canEnterSafeboxCode)
         {
             LevelManagerTutorial.instanse.SafeboxCode.Add(number);
